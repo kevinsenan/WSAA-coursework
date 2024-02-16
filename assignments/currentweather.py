@@ -1,9 +1,11 @@
-#
-#
-#
+# currentweather.py
+# Assignment 1. Using an api to get the temperature and wind data from a web site
+# author K Donovan
+
 
 import requests
-import json
+
+
 # code for temperature
 url = "https://api.open-meteo.com/v1/forecast?latitude=52.6446122&longitude=-9.481083&current=temperature_2m"
 response = requests.get(url) 
