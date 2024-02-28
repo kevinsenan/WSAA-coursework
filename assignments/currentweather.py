@@ -12,7 +12,7 @@ response = requests.get(url)
 data = response.json()
 current_units = data["current"]
 temperature = current_units["temperature_2m"]
-print (f' The temperature is: {temperature} degrees C')
+print (temperature)
 
 
  # code for wind speed
@@ -21,4 +21,4 @@ response = requests.get(url)
 data = response.json()
 current_units = data["current"]
 windspeed = current_units["wind_speed_10m"]
-print (f' The wind speed is: {windspeed} km/h')
+print (windspeed)
